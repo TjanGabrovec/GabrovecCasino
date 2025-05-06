@@ -1,4 +1,4 @@
-#**Gambling Room**
+#Gambling Room
 
 **PHP based gambling room** that features a Dice Game and a Leaderboard.
 
