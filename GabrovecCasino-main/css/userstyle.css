@@ -1,0 +1,192 @@
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #000;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+
+/* Main menu div */
+.midframe {
+    width: 100%;
+    min-height: 50%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10% auto;
+    border-radius: 25px;
+    border: double 8px rgb(107, 104, 101);
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes pulse-glow {
+    0% {
+        filter: drop-shadow(0 0 5px gold) brightness(1);
+    }
+    50% {
+        filter: drop-shadow(0 0 10px rgb(255, 255, 255)) brightness(1.2);
+    }
+    100% {
+        filter: drop-shadow(0 0 8px gold) brightness(1);
+    }
+}
+
+.title1{
+    margin-top: -10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.title2{
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 300%;
+    font-family: 'Times New Roman', serif;
+}
+
+.left-icon {
+    transform: rotate(-15deg);
+}
+
+.right-icon {
+    transform: rotate(15deg);
+}
+
+/* User Registration Form Styles */
+.user-form {
+    width: 80%;
+    max-width: 80%;  /* Limit the form to 500px max width */
+    margin: 5% auto;
+    padding: 3%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight background to make it stand out */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;  /* Add a bit more space between fields */
+}
+
+.form-group label {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', serif;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+.form-input {
+    width: 90%;
+    max-width: 90%;  /* Ensure the inputs don't stretch more than the container */
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 3%;
+    margin-top: 5%;
+    background: linear-gradient(to bottom, #d4af37, #f9d423);
+    color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .user-form {
+        width: 20%; /* Make form width 90% of screen */
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-input {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-form {
+        width: 50%;  /* Further adjust form for smaller devices */
+    }
+
+    .form-input {
+        padding: 10px;
+    }
+}
+
