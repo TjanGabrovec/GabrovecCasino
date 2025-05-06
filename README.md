@@ -12,4 +12,6 @@ Game sessions are tracked using **session storage**, meaning each player's score
 
 ---
 
-*To play, Set up a local PHP server (e.g., XAMPP, WAMP, or any PHP hosting). Place the project files in the appropriate directory. Navigate to index.php and open it in your browser to start playing.*
+<sub> 
+To play, Set up a local PHP server (e.g., XAMPP, WAMP, or any PHP hosting). Place the project files in the appropriate directory. Navigate to index.php and open it in your browser.
+</sub>
