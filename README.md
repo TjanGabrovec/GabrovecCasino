@@ -1,4 +1,4 @@
-*****GAMBLING ROOM*** is a PHP based game of luck, which features a Dice Game and a Leaderboard.
+***GAMBLING ROOM*** is a PHP based game of luck, which features a Dice Game and a Leaderboard.
 
 ***RULES:***
 
