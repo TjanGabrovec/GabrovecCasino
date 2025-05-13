@@ -10,15 +10,17 @@
 </head>
 <body>
     <div class="all">
-        <div class="midframe">
-        <div class="title-container">
+        <div class="titleframe">            
+            <div class="title-container">
                 <img src="images/icon.png" alt="Icon" class="title-icon left-icon">
                 <div class="title-wrapper">
                     <div class="title1">Gabrovec</div>
                     <div class="title2">CASINO</div>
                 </div>
                 <img src="images/icon.png" alt="Icon" class="title-icon right-icon">
-            </div>            
+            </div>
+        </div>
+        <div class="midframe">            
             
             <div class="grid-container">
                 <div class="grid-item">
